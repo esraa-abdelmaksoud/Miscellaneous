@@ -11,7 +11,7 @@ def convert_pdf(path):
 
     count = 1
     for im in images:
-        im.save(r'{}\{}\{}-{}.jpg'.format(file_path, file_name, file_name, count))
+        im.save(r'{}\{}{}-{}.jpg'.format(file_path, file_name, file_name, count))
         count += 1
     print("converted")
 path = input("Please write a file path: ")
