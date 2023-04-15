@@ -2,9 +2,9 @@ import cv2
 import os
 import fitz
 
-pdf_path = '/mnt/D/Upwork/CompleteMap-Rom/sample_quality_quantification/original_reports/images/ocred_pdfs/текст_отчета_14-7.pdf'
-rect_dir = '/mnt/D/Upwork/CompleteMap-Rom/sample_quality_quantification/original_reports/images/rect_images/'
-image_path = '/mnt/D/Upwork/CompleteMap-Rom/sample_quality_quantification/original_reports/images/текст_отчета_14-7.png'
+pdf_path = '/mnt/D/текст_отчета_14-7.pdf'
+rect_dir = '/mnt/D/rect_images/'
+image_path = '/mnt/D/текст_отчета_14-7.png'
 
 def extract_data(pdf_path: str):
     doc = fitz.open(pdf_path)
