@@ -5,7 +5,7 @@ import os
 import pandas as pd
 import shutil
 # Setting configration
-folder_path ='/mnt/D/Upwork/CompleteMap-Rom/sample_quality_quantification/original_reports/images/'
+folder_path ='/mnt/D/images/'
 config='--psm 3'
 
 
