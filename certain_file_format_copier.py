@@ -27,6 +27,7 @@ def main():
             except:
                 pass
             f.writelines(temp_path)
+            f.writelines("\n")
 
 if __name__ == '__main__':
     main()
