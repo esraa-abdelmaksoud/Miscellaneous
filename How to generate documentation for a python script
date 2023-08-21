@@ -1,0 +1,34 @@
+How to generate documentation from script in Python
+1) Install packages:
+- pip install sphinx
+- pip install sphinx-rtd-theme
+
+2) Create a folder called modules in the documentaion folder.
+
+3) Add an empty file __init__.py in modules folder.
+
+4) Add the python script in the documentation folder and modules folder.
+
+5) Change directory to the main documentaiton folder.
+
+6) Run the command "sphinx-quickstart" in the terminal.
+
+7) Run "sphinx-apidoc -o docs ." in the terminal.
+
+8) Add the required data to the content items in index.rst. Write "docs/rst_file_name" without .rst extension below the content and after adding an empty line.
+
+8) Add rst files to docs folder.
+
+8) Change html_theme in config file conf.py to "sphinx_rtd_theme".
+
+9) Change the extensions in the same config file to ["sphinx.ext.todo","sphinx.ext.viewcode","sphinx.ext.autodoc"]
+
+10) At the top of the file uncomment or add the following:
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+If it doesn't work, use one dot.
+
+12) Run ".\make.bat html" in the terminal for Windows and "make html" for Linux.
+
+13) The files will appear in _build/html.
